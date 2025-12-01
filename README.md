@@ -24,22 +24,22 @@ This project is a Python-based simulator. It allows users to run and compare var
 ## Project Structure
 
 scheduler/
-  __init__.py
-  scheduler.py
-  processes.txt         # sample process input file
-  algorithms/
-    __init__.py
-    fcfs.py
-    sjf.py
-    srtf.py
-    rr.py
-    priority_np.py
-    priority_p.py
-  utils/
-    __init__.py
-    parser.py
-    statistics.py
-    gantt.py
+init.py
+scheduler.py
+processes.txt
+algorithms/
+init.py
+fcfs.py
+sjf.py
+srtf.py
+rr.py
+priority_np.py
+priority_p.py
+utils/
+init.py
+parser.py
+statistics.py
+gantt.py
 
 ## How to Run the Simulator
 
@@ -129,7 +129,10 @@ Preemptive Priority performs similarly if priority values correlate with burst t
 Observed Behaviors:
 
 FCFS: suffers from convoy effect
+
 SJF vs SRTF: preemption drastically improves performance
+
 RR: performance heavily depends on quantum size
+
 Priority: low-priority processes can starve
 
