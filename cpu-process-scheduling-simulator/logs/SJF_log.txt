@@ -1,0 +1,24 @@
+Algorithm: SJF
+==================================================
+
+EXECUTION LOG:
+t=0: P1 starts running (SJF)
+t=8: P1 completes (SJF)
+t=8: P2 starts running (SJF)
+t=12: P2 completes (SJF)
+t=12: P4 starts running (SJF)
+t=17: P4 completes (SJF)
+t=17: P3 starts running (SJF)
+t=26: P3 completes (SJF)
+
+PER-PROCESS STATISTICS:
+{'pid': 'P1', 'arrival': 0, 'burst': 8, 'completion': 8, 'turnaround': 8, 'waiting': 0, 'response': 0}
+{'pid': 'P2', 'arrival': 1, 'burst': 4, 'completion': 12, 'turnaround': 11, 'waiting': 7, 'response': 7}
+{'pid': 'P3', 'arrival': 2, 'burst': 9, 'completion': 26, 'turnaround': 24, 'waiting': 15, 'response': 15}
+{'pid': 'P4', 'arrival': 3, 'burst': 5, 'completion': 17, 'turnaround': 14, 'waiting': 9, 'response': 9}
+
+OVERALL STATISTICS:
+avg_turnaround: 14.25
+avg_waiting: 7.75
+avg_response: 7.75
+Context Switches: 3

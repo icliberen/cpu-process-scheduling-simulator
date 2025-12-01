@@ -1,0 +1,28 @@
+Algorithm: RR(q=4)
+==================================================
+
+EXECUTION LOG:
+t=0: P1 starts running (RR)
+t=4: P2 starts running (RR)
+t=8: P2 completes (RR)
+t=8: P3 starts running (RR)
+t=12: P4 starts running (RR)
+t=16: P1 resumes (RR)
+t=20: P1 completes (RR)
+t=20: P3 resumes (RR)
+t=24: P4 resumes (RR)
+t=25: P4 completes (RR)
+t=25: P3 resumes (RR)
+t=26: P3 completes (RR)
+
+PER-PROCESS STATISTICS:
+{'pid': 'P1', 'arrival': 0, 'burst': 8, 'completion': 20, 'turnaround': 20, 'waiting': 12, 'response': 0}
+{'pid': 'P2', 'arrival': 1, 'burst': 4, 'completion': 8, 'turnaround': 7, 'waiting': 3, 'response': 3}
+{'pid': 'P3', 'arrival': 2, 'burst': 9, 'completion': 26, 'turnaround': 24, 'waiting': 15, 'response': 6}
+{'pid': 'P4', 'arrival': 3, 'burst': 5, 'completion': 25, 'turnaround': 22, 'waiting': 17, 'response': 9}
+
+OVERALL STATISTICS:
+avg_turnaround: 18.25
+avg_waiting: 11.75
+avg_response: 4.50
+Context Switches: 7

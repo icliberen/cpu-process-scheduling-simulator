@@ -1,0 +1,25 @@
+Algorithm: PRIO_P
+==================================================
+
+EXECUTION LOG:
+t=0: P1 starts running (Priority P)
+t=1: P2 starts running (Priority P)
+t=5: P2 completes (Priority P)
+t=5: P1 preempts P2 (Priority P)
+t=12: P1 completes (Priority P)
+t=12: P4 starts running (Priority P)
+t=17: P4 completes (Priority P)
+t=17: P3 starts running (Priority P)
+t=26: P3 completes (Priority P)
+
+PER-PROCESS STATISTICS:
+{'pid': 'P1', 'arrival': 0, 'burst': 8, 'completion': 12, 'turnaround': 12, 'waiting': 4, 'response': 0}
+{'pid': 'P2', 'arrival': 1, 'burst': 4, 'completion': 5, 'turnaround': 4, 'waiting': 0, 'response': 0}
+{'pid': 'P3', 'arrival': 2, 'burst': 9, 'completion': 26, 'turnaround': 24, 'waiting': 15, 'response': 15}
+{'pid': 'P4', 'arrival': 3, 'burst': 5, 'completion': 17, 'turnaround': 14, 'waiting': 9, 'response': 9}
+
+OVERALL STATISTICS:
+avg_turnaround: 13.50
+avg_waiting: 7.00
+avg_response: 6.00
+Context Switches: 4

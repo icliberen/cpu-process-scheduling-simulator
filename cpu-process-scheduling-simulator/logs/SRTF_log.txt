@@ -1,0 +1,25 @@
+Algorithm: SRTF
+==================================================
+
+EXECUTION LOG:
+t=0: P1 starts running (SRTF)
+t=1: P2 starts running (SRTF)
+t=5: P2 completes (SRTF)
+t=5: P4 starts running (SRTF)
+t=10: P4 completes (SRTF)
+t=10: P1 preempts P4 (SRTF)
+t=17: P1 completes (SRTF)
+t=17: P3 starts running (SRTF)
+t=26: P3 completes (SRTF)
+
+PER-PROCESS STATISTICS:
+{'pid': 'P1', 'arrival': 0, 'burst': 8, 'completion': 17, 'turnaround': 17, 'waiting': 9, 'response': 0}
+{'pid': 'P2', 'arrival': 1, 'burst': 4, 'completion': 5, 'turnaround': 4, 'waiting': 0, 'response': 0}
+{'pid': 'P3', 'arrival': 2, 'burst': 9, 'completion': 26, 'turnaround': 24, 'waiting': 15, 'response': 15}
+{'pid': 'P4', 'arrival': 3, 'burst': 5, 'completion': 10, 'turnaround': 7, 'waiting': 2, 'response': 2}
+
+OVERALL STATISTICS:
+avg_turnaround: 13.00
+avg_waiting: 6.50
+avg_response: 4.25
+Context Switches: 4
